@@ -1,0 +1,248 @@
+jan 26, 2021 8:06:37 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Server version name:   Apache Tomcat/9.0.41
+jan 26, 2021 8:06:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Server built:          Dec 3 2020 11:43:00 UTC
+jan 26, 2021 8:06:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Server version number: 9.0.41.0
+jan 26, 2021 8:06:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: OS Name:               Windows 10
+jan 26, 2021 8:06:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: OS Version:            10.0
+jan 26, 2021 8:06:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Architecture:          amd64
+jan 26, 2021 8:06:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Java Home:             C:\Program Files\Java\jre-9.0.4
+jan 26, 2021 8:06:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: JVM Version:           9.0.4+11
+jan 26, 2021 8:06:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: JVM Vendor:            Oracle Corporation
+jan 26, 2021 8:06:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: CATALINA_BASE:         C:\apache-tomcat-9.0.41
+jan 26, 2021 8:06:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: CATALINA_HOME:         C:\apache-tomcat-9.0.41
+jan 26, 2021 8:06:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Dcatalina.base=C:\apache-tomcat-9.0.41
+jan 26, 2021 8:06:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Dcatalina.home=C:\apache-tomcat-9.0.41
+jan 26, 2021 8:06:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Dwtp.deploy=C:\apache-tomcat-9.0.41\wtpwebapps
+jan 26, 2021 8:06:38 PM org.apache.catalina.startup.VersionLoggerListener log
+INFORMAÇÕES: Command line argument: -Dfile.encoding=Cp1252
+jan 26, 2021 8:06:38 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFORMAÇÕES: Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+jan 26, 2021 8:06:38 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFORMAÇÕES: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+jan 26, 2021 8:06:38 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFORMAÇÕES: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+jan 26, 2021 8:06:38 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFORMAÇÕES: OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+jan 26, 2021 8:06:38 PM org.apache.coyote.AbstractProtocol init
+INFORMAÇÕES: Initializing ProtocolHandler ["http-nio-8080"]
+jan 26, 2021 8:06:38 PM org.apache.catalina.startup.Catalina load
+INFORMAÇÕES: Server initialization in [1359] milliseconds
+jan 26, 2021 8:06:39 PM org.apache.catalina.core.StandardService startInternal
+INFORMAÇÕES: Starting service [Catalina]
+jan 26, 2021 8:06:39 PM org.apache.catalina.core.StandardEngine startInternal
+INFORMAÇÕES: Starting Servlet engine: [Apache Tomcat/9.0.41]
+jan 26, 2021 8:06:39 PM org.apache.catalina.core.ContainerBase startInternal
+GRAVE: A child container failed during start
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.JarResourceSet@732f29af]
+	at java.base/java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:843)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+Caused by: org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.JarResourceSet@732f29af]
+	at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:139)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:173)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:726)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4830)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4966)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	... 21 more
+Caused by: java.lang.IllegalArgumentException: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+	at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:143)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	... 33 more
+Caused by: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+	at java.base/java.util.zip.ZipFile$ZipFileInputStream.initDataOffset(Unknown Source)
+	at java.base/java.util.zip.ZipFile$ZipFileInputStream.read(Unknown Source)
+	at java.base/java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(Unknown Source)
+	at java.base/java.util.zip.InflaterInputStream.read(Unknown Source)
+	at java.base/java.io.InputStream.readNBytes(Unknown Source)
+	at java.base/java.util.jar.JarFile.getBytes(Unknown Source)
+	at java.base/java.util.jar.JarFile.getManifestFromReference(Unknown Source)
+	at java.base/java.util.jar.JarFile.getManifest(Unknown Source)
+	at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:141)
+	... 34 more
+
+jan 26, 2021 8:06:39 PM org.apache.catalina.core.ContainerBase startInternal
+GRAVE: A child container failed during start
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: A child container failed during start
+	at java.base/java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:928)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:843)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	... 13 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.JarResourceSet@732f29af]
+	at java.base/java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
+	... 21 more
+Caused by: org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.JarResourceSet@732f29af]
+	at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:139)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:173)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:726)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4830)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4966)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	... 21 more
+Caused by: java.lang.IllegalArgumentException: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+	at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:143)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	... 33 more
+Caused by: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+	at java.base/java.util.zip.ZipFile$ZipFileInputStream.initDataOffset(Unknown Source)
+	at java.base/java.util.zip.ZipFile$ZipFileInputStream.read(Unknown Source)
+	at java.base/java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(Unknown Source)
+	at java.base/java.util.zip.InflaterInputStream.read(Unknown Source)
+	at java.base/java.io.InputStream.readNBytes(Unknown Source)
+	at java.base/java.util.jar.JarFile.getBytes(Unknown Source)
+	at java.base/java.util.jar.JarFile.getManifestFromReference(Unknown Source)
+	at java.base/java.util.jar.JarFile.getManifest(Unknown Source)
+	at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:141)
+	... 34 more
+
+jan 26, 2021 8:06:39 PM org.apache.catalina.startup.Catalina start
+GRAVE: O componente Server requerido falhou ao iniciar, por isso, o Tomcat não pode iniciar
+org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:928)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+Caused by: java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: A child container failed during start
+	at java.base/java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
+	... 13 more
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:928)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:843)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	... 13 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.JarResourceSet@732f29af]
+	at java.base/java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
+	... 21 more
+Caused by: org.apache.catalina.LifecycleException: Failed to initialize component [org.apache.catalina.webresources.JarResourceSet@732f29af]
+	at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:139)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:173)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:726)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4830)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4966)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	... 21 more
+Caused by: java.lang.IllegalArgumentException: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+	at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:143)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+	... 33 more
+Caused by: java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+	at java.base/java.util.zip.ZipFile$ZipFileInputStream.initDataOffset(Unknown Source)
+	at java.base/java.util.zip.ZipFile$ZipFileInputStream.read(Unknown Source)
+	at java.base/java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(Unknown Source)
+	at java.base/java.util.zip.InflaterInputStream.read(Unknown Source)
+	at java.base/java.io.InputStream.readNBytes(Unknown Source)
+	at java.base/java.util.jar.JarFile.getBytes(Unknown Source)
+	at java.base/java.util.jar.JarFile.getManifestFromReference(Unknown Source)
+	at java.base/java.util.jar.JarFile.getManifest(Unknown Source)
+	at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.initInternal(AbstractSingleArchiveResourceSet.java:141)
+	... 34 more
+
+jan 26, 2021 8:06:39 PM org.apache.coyote.AbstractProtocol pause
+INFORMAÇÕES: Pausing ProtocolHandler ["http-nio-8080"]
+jan 26, 2021 8:06:39 PM org.apache.catalina.core.StandardService stopInternal
+INFORMAÇÕES: Stopping service [Catalina]
+jan 26, 2021 8:06:39 PM org.apache.coyote.AbstractProtocol destroy
+INFORMAÇÕES: Destroying ProtocolHandler ["http-nio-8080"]
